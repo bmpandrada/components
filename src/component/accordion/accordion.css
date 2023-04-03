@@ -83,7 +83,7 @@ svg{
     }
   
     .number, .text, .hidden p, .hidden ul {
-      font-size: 1.6rem; /* reduce font size for smaller screens */
+      font-size: 1.2rem; /* reduce font size for smaller screens */
     }
   
     .hidden ul {
@@ -95,6 +95,7 @@ svg{
     .hidden ul {
       flex-direction: column; /* stack items vertically for smaller screens */
     }
+    
   }
   
 
