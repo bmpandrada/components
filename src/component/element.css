@@ -18,7 +18,7 @@ body{
 
 .container{
  
-    width: auto;
+    width: 100%;
     padding: 2rem;
 }
 .container h1{
@@ -29,7 +29,7 @@ body{
 .container-element{
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(1, auto);
 }
 
