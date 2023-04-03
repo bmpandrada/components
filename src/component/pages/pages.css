@@ -42,7 +42,35 @@
 }
 
 .page-link:hover,
-.page-link:active{
+.page-link:active,
+.page-link.current-page{
     background-color: green;
-    color: aliceblue;
+    color: #ffffff;
+}
+
+.the-dots{
+    color: #c3c3c3;
+}
+
+@media screen and (max-width: 768px){
+    .btn-page-icon{
+        height: 1.4rem;
+        width: 1.4rem;   
+    }
+    
+.btn-page{
+    height: 2.8rem;
+    width: 2.8rem;
+}
+.page-link:link,
+.page-link:visited{
+    font-size: 1.2rem;
+    color: #797979;
+}
+.page-link:hover,
+.page-link:active,
+.page-link.current-page{
+    background-color: green;
+    color: #ffffff;
+}
 }
