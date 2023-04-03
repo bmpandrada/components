@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    box-sizing: inherit;
+    background-color: rgb(255, 255, 255);
+    line-height: 1;
+}
+
+
+
+img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: .8rem;
+    transform: scale(1.5);
+    box-shadow:  0 1.2rem 2.4rem rgba(0, 0, 0, 0.25);
+
+}
+.carousel{
+    background-color: #087f5b;
+    width: 80rem;
+    margin: 10rem auto;
+    border-radius: .8rem;
+    padding: 3.2rem;
+    padding-left: 8.6rem;
+    padding-right: 4.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8.5rem;
+    position: relative;
+    backface-visibility: hidden;
+}
+.testimonial-text{  
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 3.2rem;
+    color:#e6fcf5;
+
+}
+.testimonial-author{
+    font-size: 1.4rem;
+    color: #00e4a0;
+    text-transform: capitalize;
+
+}
+.testimonial-job{
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    text-transform: capitalize;
+    color:#e6fcf5;
+ 
+}
+.btn{
+    background-color: #e6fcf5;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.625);
+}
+.btn-icon{
+    height: 2.4rem;
+    height: 2.4rem;
+    stroke: #087f5b;
+}
+.btn--left{
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn--right{
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+.dots{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 3.2rem);
+
+    display: flex;
+    gap: 1.2rem;
+}
+.dot{
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: #fff;
+    border: .2rem solid green;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.dot--fill{
+    background-color: #087f5b;
+}
+
+@media screen and (max-width: 768px) {
+    img{
+        height: 11.5rem;
+        width: 11.5rem;
+    }
+    .carousel{
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        width: 95%;
+        height: auto;
+        padding: 1.5rem;
+        padding-left: 5.5rem;
+        padding-right: 3.5rem;
+        gap: 4.5rem;
+        font-size: 10%;
+    }
+    .testimonial-text{  
+        font-size: 1.1rem;
+    
+    }
+    .testimonial-author{
+        font-size: .95rem;
+        color: #00e4a0;
+        text-transform: capitalize;
+    
+    }
+    .testimonial-job{
+        font-size: .9rem;
+        margin-bottom: 1rem;
+     
+    }
+    
+  }
+  
+  @media screen and (max-width: 480px) {
+   
+  }
+  

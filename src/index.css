@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+body{
+  box-sizing: inherit;
+}
+
+
+.container--1{
+  /* margin: 5rem 0; */
+  
+  height: 100vh;
+  font-size: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  gap: .5rem .5rem;
+  /* align-items: center;
+  justify-items: center; */
+}
+.el{
+
+} 
+.el--1{
+  background-color: #ff7b00;
+  padding: 1rem;
+  grid-column: 1/span 3;
+  grid-row: 2;
+}
+.el--1 > img{
+  width: 100%;
+}
+
+.el--2{
+  background-color: #050505;
+  grid-column: 1/ span 3;
+  grid-row: 1;
+}
+.el--3{
+  background-color: #00ff15;
+  grid-column: 1/span 2;
+  grid-row: 4/span 3;
+  /* align-self: center;
+  justify-self: center/end/start; */
+}
+.el--4{
+  background-color: #0059ff;
+ 
+}
+.el--5{
+  background-color: #6200ff;
+}
+.el--6{
+  background-color: #ff00f7;
+  grid-column: 1/ span 3;
+  grid-row: 3;
+}
+.el--7{
+  background-color: #ff9900;
+}
+.el--8{
+  background-color: rgb(255, 0, 0);
+  grid-column: 1/4;
+}
+
+
+
+
+nav ul{
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+  width: 10;
+}
+
+nav ul li{
+  list-style: none;
+  text-transform: capitalize;
+}
+nav ul li{
+  margin: 0 1rem;
+  font-size: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: wheat;
+}
+nav ul li:last-child{
+  margin: 0;
+}

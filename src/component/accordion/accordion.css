@@ -1,0 +1,100 @@
+
+.accordion{
+    padding: 0 1rem;
+    width: 700px;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    
+}
+.accordion h1{
+    margin-bottom: 1rem;
+}
+
+.item{
+    width: 100%;
+}
+.number, 
+.text{
+    font-size: 2.4rem;
+    font-weight: 500;
+    /* color: #0ab60a; */
+}
+
+.number{
+    color: #c2c0bd;
+}
+
+.hidden p{
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+    font-size: 1.5rem;
+}
+.hidden ul{
+    color: #696767;
+    margin-left: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+/* .hidden li{
+    margin-bottom: 1.2rem;
+} */
+svg{
+    width:2rem;
+    color: #0ab60a;
+    transition: all 0.6s ease;
+}
+.item{
+    box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.1);
+    padding: 2.4rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 2.4rem;
+    row-gap: 3.2rem;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.hidden{
+    grid-column: 2;
+    display: none;
+    
+}
+
+.open{
+    border-top: .4rem solid green;
+}
+.open .number{
+    color: #0ab60a;
+}
+
+.open .hidden{
+    display: block;
+    border-top: 0;
+   
+}
+
+@media screen and (max-width: 768px) {
+    .accordion {
+      width: 90%; /* adjust width for smaller screens */
+    }
+  
+    .number, .text, .hidden p, .hidden ul {
+      font-size: 1.6rem; /* reduce font size for smaller screens */
+    }
+  
+    .hidden ul {
+      margin-left: 1rem; /* reduce margin for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hidden ul {
+      flex-direction: column; /* stack items vertically for smaller screens */
+    }
+  }
+  
+
