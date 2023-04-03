@@ -76,6 +76,16 @@ section{
 
 
 @media screen and (max-width: 768px){
+    header{
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(82, 70, 17, 0.255)), url('./cacao.jpg');
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        color: #fff;
+    }
+    
   
     .container-hero{
         width: 100%;
