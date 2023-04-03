@@ -19,7 +19,9 @@ body{
     align-items: center;
 }
 
-
+.container{
+    width: 100%;
+}
 .container h1{
     text-align: center;
     color: #03855a;
