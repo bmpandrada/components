@@ -14,13 +14,14 @@ body{
     box-sizing: inherit;
     background-color: rgb(255, 255, 255);
     line-height: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
 }
 
 .container{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container h1{
     text-align: center;
