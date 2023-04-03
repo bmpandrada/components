@@ -1,6 +1,7 @@
 import Accordion from './accordion/Accordion'
 import Carousel from './carousel/Carousel'
 import './element.css'
+import Hero from './hero/Hero'
 import Pages from './pages/Pages'
 import Table from './table/Table'
 
@@ -31,7 +32,10 @@ const Elements = () => {
             <h1>Pages</h1>
               <Pages />
             </div>
-            <div className="col container-col-5">5</div>
+            <div className="col container-col-5">
+            <h1>Hero Pages</h1>
+              <Hero />
+            </div>
             <div className="col container-col-6">6</div>
             <div className="col container-col-7">7</div>
             <div className="col container-col-8">8</div>

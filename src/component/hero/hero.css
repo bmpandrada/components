@@ -1,0 +1,97 @@
+body{
+    padding: 0;
+}
+
+html{
+    color: #444;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.2rem;
+}
+header{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(82, 70, 17, 0.255)), url('./cacao.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+}
+
+.container-hero{
+    margin: 0 auto;
+    width: 1200px;
+}
+.container-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    transform: translate(-50%, -50%);
+
+}
+.container-header-inner{
+    width: 50%;
+
+}
+.hero-title{
+    font-size: 5.2rem;
+    margin-bottom: 3.2rem;
+    /* line-height: 1.5; */
+}
+.hero-subtitle{
+    font-size: 4.4rem;
+    margin-bottom: 4.8rem;
+}
+.hero-description{
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+
+.btn-hero:link,
+.btn-hero:visited{
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.6rem 3.2rem;
+    border-radius: .9rem;
+}
+
+section{
+    padding: 9.6rem 0;
+    background-color: #f7f7f7;
+}
+
+
+@media screen and (max-width: 768px){
+  
+    .container-hero{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 1.5rem;
+    }
+    .container-header-inner{
+        width: 100%;
+        
+    }
+    .hero-title{
+        font-size: 3.2rem;
+    }
+    section .container-hero{
+        display: flex;
+        flex-direction: column;
+    }
+}
